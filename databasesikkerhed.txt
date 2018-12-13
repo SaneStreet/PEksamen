@@ -1,0 +1,10 @@
+2 metoder til at beskytte imod SQL-injections:
+
+1. Denne metode får databasen til at omgå specifikke ord eller betydninger. F.eks. karakteren "*", som kan betyde "any".
+Man kan programmere databasen til at tage bruger input, istedet for at læse det
+som en kommando. Der er ikke rigtigt et navn for denne metode, men kan kan udtrykke det som
+hvis databasen omgår input direkte. F.eks. 'OR 1=1'
+
+2. Enforce Least Privilege kan bruges til at reducere eksponering af SQL injection.
+Dette gøres ved at begrænse tilladelser til f.eks. rum i en chat. Mor og Far må godt chatte sammen, men Datteren skal ligge i sin seng og sove. Så hun må ikke få adgang til chatten lige nu.
+

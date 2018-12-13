@@ -1,0 +1,21 @@
+<h2>Konti hos {{title}}:</h2>
+
+
+<table>
+  <tr>
+    <th>Kontonavn</th>
+    <th>Indestående</th>
+    <th>Rente</th>
+    <th>Ejer</th>
+  </tr>
+  <tr> 
+    {{#each konti}} 
+  </tr>
+  <tr>
+    <td>{{this.kontoNavn}}</td>
+    <td>{{this.amount}}</td>
+    <td>{{this.rente}}</td>
+    <td>{{this.ejer}}</td>
+  </tr>
+  <tr>{{/each}}</tr>
+</table>
